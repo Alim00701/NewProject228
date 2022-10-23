@@ -30,7 +30,7 @@ while True:
             surname_name.write(item + '\n')
 
     if search == 2:
-        what_search = r''
+        what_search = r'(\b[\w\-]+[@][\w\-]+(\.[\w\-]+)+)'
         results = re.findall(what_search, my_text_file)
         print(results)
 

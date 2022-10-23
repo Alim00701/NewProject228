@@ -2,7 +2,7 @@ import os
 from envparse import env
 from casino import root
 env.read_envfile('settings.env')
-balance = int(os.getenv('MY_MONEY'))
+balance = os.getenv('MY_MONEY')
 while True:
     command = input('Will you play?')
     if command == 'no':
