@@ -36,7 +36,7 @@ while True:
 
         for item in results:
             print(item)
-            m.write(item + '\n')
+            m.write(item[0] + '\n')
 
         print(f'Total results of file : {str(len(results))}')
 
